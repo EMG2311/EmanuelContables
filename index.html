@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Estilos.css">
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <title>Emanuel Contables</title>
+    <link rel="icon" href="Imagenes/Logo.png">
+</head>
+<body>
+
+    <div class="px-3 py-2 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <img  class="bi me-2" src="Imagenes/Logo.png" width="50" height="50" >
+              <p style="font-size:180%;">
+              Emanuel Contables
+              </p>
+            </a>
+             </h1>
+             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                <a href="https://www.instagram.com/monti_elrubio/"><img  class="bi me-2" src="Imagenes/instagram.png" width="25" height="25" ></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/emanuel-monti-rubio-a0b937179/"><img  class="bi me-2" src="Imagenes/linkedin.png" width="25" height="25" ></a>
+    
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/emanuel.montirubio"><img  class="bi me-2" src="Imagenes/facebook.png" width="25" height="25" ></a>
+        
+                </li>
+
+             </div>
+             </div>
+             </div>
+    <h2>Testing de proyectos de inversion</h2>
+    <div id="costo_directo" class="DivForm">
+        <label>Ingrese el nombre del producto a calcular</label>
+        <input id="nombreProducto" class="inputs" type="text" required>
+        <label>Ingrese total de productos producidos (PPP)</label>
+        <input id="PPP" class="inputs" type="number" required value="1"><br>
+        <hr>
+        <button id="AgregarCD" class="botonAgregar">Agregar Costos Directos</button>
+        <button id="eliminarCD" class="botonEliminar">-</button>
+        <form id="formCostoDirecto">
+        </form>
+
+
+    </div>
+    
+    <div id="costo_indirecto" class="DivForm">
+        <button id="AgregarCI" class="botonAgregar">Agregar Costos Indirectos</button>
+        <button id="EliminarCI" class="botonEliminar">-</button>
+        <form id="formCostoIndirecto">
+        </form>
+
+    </div>
+    
+
+    <button class="botonAgregar botonCalcular" type="submit" id="btnCalcular" >Calcular</button>
+    <button id="resetear" class="botonAgregar botonCalcular" onclick=location.reload(); >Reiniciar</button>
+    
+   <div id="resultado"class="DivForm">
+    
+   </div>
+   <script type="text/javascript" src="Js/inputsDinamicos.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+html{
+    font-family: sans-Serif;
+}
+h2{
+    position: relative;
+    font-family: sans-serif;
+    color: #ce2727;
+    left: 25%;
+    margin: 2%;
+}
+.botonAgregar{
+    cursor: pointer;
+    border: 0.063em solid #ce2727;
+    border-radius:0.5em;
+    background-color: #ce2727  ;
+    height: 1%;
+    width: auto;
+    color: white;
+    box-shadow: 0 0.375em 0.375em rgba(0, 0, 0, 0.6);
+    margin: 0.5%;
+}
+.botonCalcular{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    margin: 2%;
+    margin-top: 0%;
+
+}
+.botonEliminar{
+    cursor: pointer;
+    border: 0.063em solid #ce2727;
+    border-radius:0.5em;
+    background-color: #ce2727  ;
+    height: 1%;
+    width: auto;
+    color: white;
+    box-shadow: 0 0.375em 0.375em rgba(0, 0, 0, 0.6);
+}
+
+.DivForm{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin: 2%;
+   
+}
+.inputs{
+    position: relative;
+    width: 35%;
+    margin: 0.5%;
+    border-radius: 10px;
+
+}
+.select{
+    width: 20%;
+    margin:0.5%;
+    border-radius: 10px;
+    border: 0.063em solid #ce2727;
+    border-radius:0.5em;
+    background-color: #ce2727  ;
+    height: 1%;
+    width: 20%;
+    color: white;
+    box-shadow: 0 0.375em 0.375em rgba(0, 0, 0, 0.6);
+}
