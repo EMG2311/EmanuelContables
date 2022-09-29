@@ -64,7 +64,7 @@ btnEliminarCD.addEventListener('click', e=>{
             inputBorrar.remove();
             selectBorrar.remove();
             input2Borrar.remove();
-
+            contadorCD=contadorCD-1;
             console.log('se borro el imput cd numero' + contador1);
             break;
         }
@@ -78,6 +78,7 @@ btnEliminarCD.addEventListener('click', e=>{
         inputBorrar.remove()
         selectBorrar.remove();
         input2Borrar.remove();
+        contadorCD=contadorCD-1;
 
 
     }
@@ -143,7 +144,7 @@ btnAgregarCI.addEventListener('click', e => {
             inputBorrar.remove();
             selectBorrar.remove();
             input2Borrar.remove();
-
+            contadorCI=contadorCI-1;
             console.log('se borro el imput ci numero' + contador1);
             break;
         }
@@ -157,7 +158,7 @@ btnAgregarCI.addEventListener('click', e => {
         inputBorrar.remove()
         selectBorrar.remove();
         input2Borrar.remove();
-
+        contadorCI=contadorCI-1;
 
     }
 })
@@ -208,7 +209,6 @@ function CalcularPrecioUnitario(){
     let PU=sumaDirectos()+sumaIndirectos();
     let PPP=parseFloat(document.getElementById('PPP').value);
     PU=PU/PPP;
-    PU=PU.toFixed(4);
     console.log(PU);
     return PU;
 }
@@ -239,7 +239,7 @@ function sumarCostosFijos(){
     let i=0
     do{
        
-        if(document.getElementById('SCD'+i).value=='costoFijo'){
+        if(document.getElementById('SCD'+i)!=null && document.getElementById('SCD'+i).value=='costoFijo'){
             input=parseFloat(document.getElementById('CD'+i).value);
             totalFijos=totalFijos+input;  
         }
@@ -248,7 +248,7 @@ function sumarCostosFijos(){
     i=0;
     do{
        
-        if(document.getElementById('SCI'+i).value=='costoFijo'){
+        if(document.getElementById('SCI'+i)!=null && document.getElementById('SCI'+i).value=='costoFijo'){
             input=parseFloat(document.getElementById('CI'+i).value);
             totalFijos=totalFijos+input;
         }
@@ -285,9 +285,9 @@ function sumarCostosVariables(){
 
 function calcularCVu(){
     let costoVariable=sumarCostosVariables();
-    let PPP=document.getElementById('PPP').value;
+    let PPP=parseFloat(document.getElementById('PPP').value);
     console.log(costoVariable/PPP);
-    return costoVariable/PPP;
+    return (costoVariable/PPP);
 }
 
 
