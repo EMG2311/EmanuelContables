@@ -41,9 +41,16 @@
     <h2>Testing de proyectos de inversion</h2>
     <div id="costo_directo" class="DivForm">
         <label>Ingrese el nombre del producto a calcular</label>
-        <input id="nombreProducto" class="inputs" type="text" required>
-        <label>Ingrese total de productos producidos (PPP)</label>
-        <input id="PPP" class="inputs" type="number" required value="1"><br>
+        <input id="nombreProducto" class="inputs" type="text" required><br>
+        <label>Elige que quiere calcular</label><select class="select" id="selectInicio">
+            <option value="puntoEquilibrio">Punto de equilibrio</option>
+            <option value="precioUnitario">Precio Unitario</option>
+        </select>
+        <br>
+        <label id="labelIngreso">Ingrese el precio Unitario</label>
+        <input id="PPP" class="inputs" type="number" required value="1">
+
+        <br>
         <hr>
         <button id="AgregarCD" class="botonAgregar">Agregar Costos Directos</button>
         <button id="eliminarCD" class="botonEliminar">-</button>
@@ -65,10 +72,10 @@
     <button class="botonAgregar botonCalcular" type="submit" id="btnCalcular" >Calcular</button>
     <button id="resetear" class="botonAgregar botonCalcular" onclick=location.reload(); >Reiniciar</button>
     
-   <div id="resultado"class="DivForm">
+   <div id="resultado"class="DivForm DivFormResultado">
     
    </div>
-   <script type="text/javascript" src="Js/inputsDinamicos.js"></script>
+   <script type="text/javascript" src="src/inputsDinamicos.js"></script>
 </body>
 </html>
 
